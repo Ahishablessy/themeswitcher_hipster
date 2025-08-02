@@ -19,8 +19,8 @@ const App = () => {
   };
 
   return (
-    <div className={themeClasses[theme]} style={{background:"red"}}>
-      <Router>
+    <div className={themeClasses[theme]} >
+      <Router basename="/themeswitcher_hipster">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
