@@ -82,6 +82,15 @@
   border: 1px solid #ccc;
 }
 
+.selectthemeoption
+{
+   color: black;
+  border: 1px solid rgb(249, 226, 182);
+  background: #f4c84d;
+    font-family: 'Pacifico', cursive;
+
+}
+
 /* Hamburger button */
 .hamburger {
   display: none;
@@ -302,6 +311,12 @@
   color: black;
 }
 
+.portfolio
+{
+  color: red;
+  text-decoration: underline;
+}
+
 /* Contact Form Area */
 .contactFormWrapper {
   flex: 1 1 48%;
@@ -490,3 +505,79 @@
     margin: 1rem 0;
   }
 }
+
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+  overflow-y: auto; /* ✅ allows scrolling on mobile */
+}
+
+.modalContent {
+  background: #f4c84d;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh; /* ✅ keeps modal from exceeding screen */
+  overflow-y: auto; /* ✅ scrolls inner content if too tall */
+  position: relative;
+  box-sizing: border-box;
+}
+
+.modalImage {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: rgb(248, 59, 59);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modalContent p{
+  font-size: 0.8rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 600px) {
+  .modalContent {
+    padding: 1rem;
+  }
+
+  .closeButton {
+    font-size: 2rem;
+    right: 10px;
+    top: 5px;
+  }
+}
+
+.viewmore
+{
+  font-weight: bold;
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
