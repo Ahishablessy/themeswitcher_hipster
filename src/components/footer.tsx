@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={themeStyles.footer}>
       <div className={themeStyles.column}>
-        <h2 className={themeStyles.logo}><img src={ablogo} style={{width:"10%"}}/></h2>
+        <img src={ablogo} style={{width:"10%", textAlign:"center"}}/>
         {/* <p>Creative Theme Switcher</p> */}
       </div>
 

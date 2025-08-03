@@ -25,7 +25,9 @@ const Contact: React.FC = () => {
         <p>🕒 Mon - Fri: 9am - 7pm</p>
           <h2>Personal Info</h2>
         <p>Ahisha Blessy R N(React Developer)</p>
-        <p>https://ahishablessy.github.io/portfolio/</p>
+        {/* <p>https://ahishablessy.github.io/portfolio/</p> */}
+                <p>Link</p>
+
         <p>📞 +91 9489404059</p>
         <p>✉️ ahisharn@gmail.com</p>
         {/* <p>🕒 Mon - Fri: 9am - 6pm</p> */}

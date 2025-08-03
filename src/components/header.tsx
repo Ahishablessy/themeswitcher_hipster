@@ -19,14 +19,15 @@ const Header: React.FC = () => {
   return (
     <header className={themeStyles.header}>
       <div className={themeStyles.headerContent}>
-        <div className={themeStyles.logo}><img src={ablogo} style={{width:"5%"}}/> &nbsp;
-        <span className={themeStyles.logotitle}> AB Theme Switch</span>
+        <div className={themeStyles.logo}> 
+          <img src={ablogo} className={themeStyles.widthset}/> &nbsp;
+        <span className={themeStyles.logotitle}> AB Theme Switcher</span>
         </div>
-        
+        <div className={themeStyles.widthbutton}>
         <button className={themeStyles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
           ☰
         </button>
-
+</div>
         <nav className={`${themeStyles.nav} ${menuOpen ? themeStyles.open : ''}`}>
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>

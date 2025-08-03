@@ -68,13 +68,16 @@ const About: React.FC = () => {
       <div className={themeStyles.textSection}>
         <h1 className={themeStyles.titleabout}>About Theme Switch</h1>
         <p className={themeStyles.descriptionabout}>
-        In a React app with TypeScript, the Context API allows you to manage themes like light, dark, and colorful globally. The ThemeContext holds the current theme and a function to update it, making it accessible to all components. Users can toggle between these themes via a ThemeSwitcher, which updates the theme state and re-renders the UI with the corresponding styles.
+        In a React application using TypeScript, the Context API serves as an effective solution for global theme management. It stores both the current theme and a function to update it, making this data accessible throughout the component tree. This approach simplifies state handling and keeps the codebase clean and maintainable.
         </p>
         <p className={themeStyles.descriptionabout}>
-       Each theme has its own set of CSS rules, applied dynamically using class names. The light theme uses bright backgrounds, the dark theme uses dark backgrounds, and the colorful theme incorporates vibrant colors for a playful look. This enables the app to cater to different user preferences and environments. The visual changes are immediate, providing a smooth and engaging experience.
+       Each theme—light, dark, and colorful—comes with its own set of CSS styles that define the visual appearance of the app. These styles are dynamically applied using class names tied to the active theme, allowing immediate changes in the user interface. This ensures a responsive and visually engaging experience.
         </p>
           <p className={themeStyles.descriptionabout}>
-           To improve user experience, the selected theme can be saved in localStorage, so it persists across sessions. Using the Context API ensures the theme is easily accessible across the app, keeping the UI flexible and user-friendly. This setup enhances accessibility and makes the app feel more personalized for each user.
+          To enhance usability, the app can save the user's selected theme in localStorage so it persists across sessions. This way, users return to the same visual settings they chose previously, without needing to reselect them. The ThemeSwitcher component handles this interaction smoothly.
+          </p>
+           <p className={themeStyles.descriptionabout}>
+         Theme switching adds a layer of personalization and improves accessibility by supporting various user preferences. Whether it's reducing eye strain with dark mode or offering vibrant visuals with colorful mode, the app adapts to user needs. Using the Context API ensures this flexibility is built on a scalable and consistent structure.
           </p>
       </div>
     </div>
