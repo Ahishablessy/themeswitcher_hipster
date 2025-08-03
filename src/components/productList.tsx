@@ -91,6 +91,11 @@ interface Product {
   price: number;
   image: string;
   description: string;
+   brand: string;
+  model: string;
+  color: string;
+  category: string;
+  discount: number;
 }
 
 const ProductList: React.FC = () => {
