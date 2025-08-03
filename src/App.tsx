@@ -18,10 +18,10 @@ const App = () => {
     theme2: theme2.app,
     theme3: theme3.app,
   };
-// basename="/themeswitcher_hipster"
+
   return (
     <div className={themeClasses[theme]} >
-      <Router >
+      <Router basename="/themeswitcher_hipster">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
