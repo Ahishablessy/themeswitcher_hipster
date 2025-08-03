@@ -66,14 +66,14 @@ const About: React.FC = () => {
         />
       </div>
       <div className={themeStyles.textSection}>
-        <h1 className={themeStyles.title}>About Our App</h1>
-        <p className={themeStyles.description}>
+        <h1 className={themeStyles.titleabout}>About Theme Switch</h1>
+        <p className={themeStyles.descriptionabout}>
         In a React app with TypeScript, the Context API allows you to manage themes like light, dark, and colorful globally. The ThemeContext holds the current theme and a function to update it, making it accessible to all components. Users can toggle between these themes via a ThemeSwitcher, which updates the theme state and re-renders the UI with the corresponding styles.
         </p>
-        <p className={themeStyles.description}>
+        <p className={themeStyles.descriptionabout}>
        Each theme has its own set of CSS rules, applied dynamically using class names. The light theme uses bright backgrounds, the dark theme uses dark backgrounds, and the colorful theme incorporates vibrant colors for a playful look. This enables the app to cater to different user preferences and environments. The visual changes are immediate, providing a smooth and engaging experience.
         </p>
-          <p className={themeStyles.description}>
+          <p className={themeStyles.descriptionabout}>
            To improve user experience, the selected theme can be saved in localStorage, so it persists across sessions. Using the Context API ensures the theme is easily accessible across the app, keeping the UI flexible and user-friendly. This setup enhances accessibility and makes the app feel more personalized for each user.
           </p>
       </div>

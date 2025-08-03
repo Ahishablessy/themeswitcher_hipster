@@ -17,14 +17,15 @@ const Contact: React.FC = () => {
     <div className={themeStyles.contactContainer}>
       {/* Left side - Address info */}
       <div className={themeStyles.addressCard}>
-        <h2>📍 Our Office</h2>
+        <h2 className={themeStyles.info}> Our Office</h2>
         <p>Hipster Pte. Ltd. </p>
         <p># 01-04, 75 Ayer Rajah Crescent, 139953, Singapore</p>
         <p>📞 +91 9876543210</p>
-        <p>✉️ contact@themeapp.com</p>
-        <p>🕒 Mon - Fri: 9am - 6pm</p>
-          <h2>📍Personal Info</h2>
+        <p>✉️ hr@hipster-inc.com</p>
+        <p>🕒 Mon - Fri: 9am - 7pm</p>
+          <h2>Personal Info</h2>
         <p>Ahisha Blessy R N(React Developer)</p>
+        <p>https://ahishablessy.github.io/portfolio/</p>
         <p>📞 +91 9489404059</p>
         <p>✉️ ahisharn@gmail.com</p>
         {/* <p>🕒 Mon - Fri: 9am - 6pm</p> */}

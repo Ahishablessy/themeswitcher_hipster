@@ -4,6 +4,12 @@
   font-family: Arial, sans-serif;
 }
 
+.logotitle
+{
+  color:white;
+  text-align: center;
+}
+
 /* .home
 {
     color: red;
@@ -118,11 +124,11 @@
   font-family: sans-serif;
   color: black;
 }
-.title {
+.titleproduct {
   font-size: 0.7rem;
   margin-bottom: 1rem;
 }
-.description {
+.descriptionproduct {
   font-size: 0.5rem;
   margin-bottom: 2rem;
 }
@@ -176,14 +182,14 @@
 .imageSection {
   flex: 1;
   min-width: 300px;
-  max-width: 45%;
+  max-width: 48%;
   order: 1;
 }
 
 .textSection {
   flex: 2;
   min-width: 300px;
-  max-width: 55%;
+  max-width: 52%;
   order: 2;
 }
 
@@ -194,16 +200,17 @@
   object-fit: cover;
 }
 
-.title {
+.titleabout {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: black;
   font-family: sans-serif;
 }
 
-.description {
-  font-size: 1.1rem;
+.descriptionabout {
+  font-size: 1rem;
   line-height: 1.6;
-  color: #444;
+  color: black;
   font-family: sans-serif;
   margin-bottom: 1rem;
 }
@@ -224,11 +231,11 @@
     max-width: 100%;
   }
 
-  .title {
+  .titleabout {
     font-size: 1.5rem;
   }
 
-  .description {
+  .descriptionabout {
     font-size: 1rem;
   }
 }
@@ -258,7 +265,7 @@
 .addressCard h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: black;
 }
 
 .addressCard p {
@@ -301,12 +308,12 @@
 
 .input:focus,
 .textarea:focus {
-  border-color: #007bff;
+  border-color: rgb(57, 57, 57);
   outline: none;
 }
 
 .textarea {
-  min-height: 100px;
+  min-height: 105px;
   resize: vertical;
 }
 
@@ -314,7 +321,7 @@
 .button {
   padding: 0.9rem;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: rgb(57, 57, 57);
   color: white;
   border: none;
   border-radius: 8px;
@@ -323,7 +330,7 @@
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: rgb(89, 88, 88);
 }
 
 /* Mobile View */
@@ -337,5 +344,103 @@
   .contactFormWrapper {
     flex: 1 1 100%;
     width: 100%;
+  }
+}
+
+/* Centering container for loader */
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* full viewport height */
+  width: 100%;
+}
+
+/* Spinning loader circle */
+.loader {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid rgb(57, 57, 57); /* Blue */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari support */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+/* Standard browsers */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Footer base */
+.footer {
+  display: flex;
+  /* justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem; */
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 45px;
+}
+
+/* Column layout */
+.column {
+  flex: 1 1 250px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo text */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #000;
+}
+
+/* Navigation */
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navList li {
+  margin: 0.2rem 0;
+}
+
+.navList a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.navList a:hover {
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+  }
+
+  .column {
+    margin: 1rem 0;
   }
 }

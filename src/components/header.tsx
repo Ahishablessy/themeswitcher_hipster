@@ -1,47 +1,8 @@
 
-// // src/components/Header/Header.tsx
-// import React from 'react';
-// import { useTheme } from '../context/themeContext';
-// import { Link } from 'react-router-dom';
-
-// import stylesTheme1 from '../styles/theme1.module.css';
-// import stylesTheme2 from '../styles/theme2.module.css';
-// import stylesTheme3 from '../styles/theme3.module.css';
-
-// const Header: React.FC = () => {
-//   const { theme , setTheme} = useTheme();
-
-//   const themeStyles = theme === 'theme1'
-//       ? stylesTheme1
-//       : theme === 'theme2'
-//       ? stylesTheme2
-//       : stylesTheme3;
-
-//   return (
-//     <header className={themeStyles.header}>
-//       <div className={themeStyles.logo}>🎨 ThemeApp</div>
-//       <nav className={themeStyles.nav}>
-//         <Link to="/">Home</Link>
-//         <Link to="/about">About</Link>
-//         <Link to="/contact">Contact</Link>
-//         <select value={theme} onChange={(e) => setTheme(e.target.value as any)}>
-//           <option value="theme1">Theme 1</option>
-//           <option value="theme2">Theme 2</option>
-//           <option value="theme3">Theme 3</option>
-//         </select>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;
-
-
-
 import React, { useState } from 'react';
 import { useTheme } from '../context/themeContext';
 import { Link } from 'react-router-dom';
-
+import ablogo from '../assets/ablogo.png'
 import stylesTheme1 from '../styles/theme1.module.css';
 import stylesTheme2 from '../styles/theme2.module.css';
 import stylesTheme3 from '../styles/theme3.module.css';
@@ -58,7 +19,9 @@ const Header: React.FC = () => {
   return (
     <header className={themeStyles.header}>
       <div className={themeStyles.headerContent}>
-        <div className={themeStyles.logo}>🎨 ThemeApp</div>
+        <div className={themeStyles.logo}><img src={ablogo} style={{width:"5%"}}/> &nbsp;
+        <span className={themeStyles.logotitle}> AB Theme Switch</span>
+        </div>
         
         <button className={themeStyles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
           ☰

@@ -109,7 +109,15 @@ useEffect(() => {
 
 
 
-  if (loading) return <p className={themeStyles.description}>Loading...</p>;
+  // if (loading) return <div className={themeStyles.loader}></div>;
+  if (loading) {
+  return (
+    <div className={themeStyles.loaderContainer}>
+      <div className={themeStyles.loader}></div>
+    </div>
+  );
+}
+
   if (error) return <p className={themeStyles.description}>{error}</p>;
 
   return (
@@ -117,8 +125,8 @@ useEffect(() => {
       {products.map((product) => (
         <div key={product.id} className={themeStyles.card}>
           <img src={product.image} alt={product.title} className={themeStyles.productImage} />
-          <h6 className={themeStyles.title}>{product.title}</h6>
-          <p className={themeStyles.description}>
+          <h6 className={themeStyles.titleproduct}>{product.title}</h6>
+          <p className={themeStyles.descriptionproduct}>
             {product.description.slice(0, 100)}...
           </p>
           <p className={themeStyles.price}>₹{product.price}</p>
