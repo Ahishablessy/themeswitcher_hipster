@@ -1,5 +1,4 @@
-// src/components/Footer/Footer.tsx
-import React from 'react';
+
 import { useTheme } from '../context/themeContext';
 import { Link } from 'react-router-dom';
 import ablogo from '../assets/ablogo.png'
@@ -8,7 +7,7 @@ import stylesTheme1 from '../styles/theme1.module.css';
 import stylesTheme2 from '../styles/theme2.module.css';
 import stylesTheme3 from '../styles/theme3.module.css';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const { theme } = useTheme();
 
   const themeStyles =

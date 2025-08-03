@@ -1,11 +1,10 @@
-import React from 'react';
 import { useTheme } from '../context/themeContext';
 
 import stylesTheme1 from '../styles/theme1.module.css';
 import stylesTheme2 from '../styles/theme2.module.css';
 import stylesTheme3 from '../styles/theme3.module.css';
 
-const Contact: React.FC = () => {
+const Contact  = () => {
   const { theme } = useTheme();
 
   const themeStyles =
@@ -15,7 +14,6 @@ const Contact: React.FC = () => {
 
   return (
     <div className={themeStyles.contactContainer}>
-      {/* Left side - Address info */}
       <div className={themeStyles.addressCard}>
         <h2 className={themeStyles.info}> Our Office</h2>
         <p>Hipster Pte. Ltd. </p>
@@ -30,13 +28,12 @@ const Contact: React.FC = () => {
 
         <p>📞 +91 9489404059</p>
         <p>✉️ ahisharn@gmail.com</p>
-        {/* <p>🕒 Mon - Fri: 9am - 6pm</p> */}
+
       </div>
       
       
      
 
-      {/* Right side - Contact Form */}
       <div className={themeStyles.contactFormWrapper}>
         <h2>Contact Us</h2>
         <form className={themeStyles.contactForm}>

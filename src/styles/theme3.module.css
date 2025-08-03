@@ -39,7 +39,6 @@
 
 
 
-/* src/styles/theme1.module.css */
 .header {
   background: rgb(248, 59, 59);
  
@@ -91,7 +90,6 @@
 
 }
 
-/* Hamburger button */
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -100,7 +98,7 @@
   cursor: pointer;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -112,7 +110,7 @@
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
-    background: rgb(212, 212, 212);
+    background: rgb(248, 59, 59);
     border-top: 1px solid #ddd;
     padding: 1rem 0;
     gap:0;
@@ -133,7 +131,7 @@
 }
 
 
-/* Responsive behavior */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -151,7 +149,7 @@
 } 
 
 
-/* src/styles/theme1.module.css */
+
 .home {
   padding: 5rem 2rem;
   background: rgb(249, 226, 182);
@@ -250,7 +248,7 @@
   margin-bottom: 1rem;
 }
 
-/* Mobile: image first, text below */
+
 @media (max-width: 768px) {
   .aboutContainer {
     flex-direction: column;
@@ -288,7 +286,7 @@
   background: rgb(249, 226, 182);
 }
 
-/* Address Info Card */
+
 .addressCard {
   flex: 1 1 48%;
   background-color: #f4c84d;
@@ -317,7 +315,7 @@
   text-decoration: underline;
 }
 
-/* Contact Form Area */
+
 .contactFormWrapper {
   flex: 1 1 48%;
   background-color: #f4c84d;
@@ -364,7 +362,6 @@
   resize: vertical;
 }
 
-/* Submit Button */
 .button {
   padding: 0.9rem;
   font-size: 1rem;
@@ -382,7 +379,7 @@
   background-color: rgb(251, 77, 77);
 }
 
-/* Mobile View */
+
 @media (max-width: 768px) {
   .contactContainer {
     flex-direction: column;
@@ -396,47 +393,36 @@
   }
 }
 
-/* Centering container for loader */
 .loaderContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* full viewport height */
+  height: 80vh; 
   width: 100%;
 }
 
-/* Spinning loader circle */
+
 .loader {
   width: 120px;
   height: 120px;
   border: 10px solid #f3f3f3;
-  border-top: 10px solid rgb(57, 57, 57); /* Blue */
+  border-top: 10px solid rgb(57, 57, 57);
   border-radius: 50%;
   animation: spin 2s linear infinite;
 }
 
-/* Safari support */
+
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
 
-/* Standard browsers */
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-/* @media (max-width: 768px) {
 
-.column {
-  margin: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-} */
-/* Footer base */
 .footer {
   display: flex;
   /* justify-content: space-around;
@@ -450,7 +436,7 @@
   font-weight: bold;
 }
 
-/* Column layout */
+
 .column {
   flex: 1 1 250px;
   margin: 0.5rem;
@@ -460,7 +446,6 @@
   text-align: center;
 }
 
-/* Logo text */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -468,7 +453,7 @@
   color: #000;
 }
 
-/* Navigation */
+
 .navList {
   list-style: none;
   padding: 0;
@@ -490,7 +475,7 @@
   color: white;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -520,7 +505,7 @@
   align-items: center;
   z-index: 1000;
   padding: 1rem;
-  overflow-y: auto; /* ✅ allows scrolling on mobile */
+  overflow-y: auto; 
 }
 
 .modalContent {
@@ -529,8 +514,8 @@
   border-radius: 10px;
   max-width: 500px;
   width: 100%;
-  max-height: 90vh; /* ✅ keeps modal from exceeding screen */
-  overflow-y: auto; /* ✅ scrolls inner content if too tall */
+  max-height: 90vh; 
+  overflow-y: auto;
   position: relative;
   box-sizing: border-box;
 }
@@ -559,7 +544,6 @@
   font-size: 0.8rem;
 }
 
-/* Responsive improvements */
 @media (max-width: 600px) {
   .modalContent {
     padding: 1rem;
@@ -578,6 +562,7 @@
   color: red;
   text-decoration: underline;
   cursor: pointer;
+  font-size: 0.8rem;
 }
 
 
