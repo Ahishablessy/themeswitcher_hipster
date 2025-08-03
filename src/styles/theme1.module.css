@@ -1,5 +1,5 @@
 .app {
-  background: #f9f9f9;
+  background: #f3f1f1;
   color: white;
   font-family: Arial, sans-serif;
 }
@@ -11,7 +11,7 @@
 
 /* src/styles/theme1.module.css */
 .header {
-  background: black;
+  background: rgb(57, 57, 57);
  
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -114,7 +114,7 @@
 /* src/styles/theme1.module.css */
 .home {
   padding: 5rem 2rem;
-  background: #f9f9f9;
+  background: #f3f1f1;
   font-family: sans-serif;
   color: black;
 }
@@ -162,4 +162,180 @@
 {
     font-size: 1rem;
   margin-bottom: 2rem; 
+}
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 6rem 2rem 2rem;
+  gap: 2rem;
+}
+
+.imageSection {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  order: 1;
+}
+
+.textSection {
+  flex: 2;
+  min-width: 300px;
+  max-width: 55%;
+  order: 2;
+}
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: sans-serif;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* Mobile: image first, text below */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .imageSection {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .textSection {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 8rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Address Info Card */
+.addressCard {
+  flex: 1 1 48%;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.addressCard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.addressCard p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Contact Form Area */
+.contactFormWrapper {
+  flex: 1 1 48%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.contactFormWrapper h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input,
+.textarea {
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.button {
+  padding: 0.9rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    padding: 5rem 1.2rem 2rem;
+  }
+
+  .addressCard,
+  .contactFormWrapper {
+    flex: 1 1 100%;
+    width: 100%;
+  }
 }
