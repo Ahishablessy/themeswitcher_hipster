@@ -248,13 +248,14 @@
 
 @media (max-width: 768px) {
   .aboutContainer {
+    width: 100vw ;
     flex-direction: column;
     background: black;
   }
 
   .imageSection {
     order: 1;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 
   .textSection {

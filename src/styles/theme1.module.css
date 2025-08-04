@@ -201,6 +201,7 @@
   flex-wrap: wrap;
   padding: 6rem 2rem 2rem;
   gap: 2rem;
+  background: #f3f1f1;
 }
 
 .imageSection {
@@ -242,6 +243,9 @@
 @media (max-width: 768px) {
   .aboutContainer {
     flex-direction: column;
+    width: 100vw ;
+      background: #f3f1f1;
+
   }
 
   .imageSection {
