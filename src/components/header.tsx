@@ -6,10 +6,13 @@ import ablogo from '../assets/ablogo.png'
 import stylesTheme1 from '../styles/theme1.module.css';
 import stylesTheme2 from '../styles/theme2.module.css';
 import stylesTheme3 from '../styles/theme3.module.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
+   const navigate = useNavigate();
 
   const themeStyles =
     theme === 'theme1' ? stylesTheme1 :
@@ -19,8 +22,8 @@ const Header = () => {
   return (
     <header className={themeStyles.header}>
       <div className={themeStyles.headerContent}>
-        <div className={themeStyles.logo}> 
-          <img src={ablogo} className={themeStyles.widthset}/> &nbsp;
+        <div className={themeStyles.logo} > 
+          <img src={ablogo} className={themeStyles.widthset} style={{cursor:"pointer"}} onClick={() => navigate('/')}/> &nbsp;
         <span className={themeStyles.logotitle}> AB Theme Switcher</span>
         </div>
         <div className={themeStyles.widthbutton}>

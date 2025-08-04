@@ -20,7 +20,7 @@
 }
 .widthset
 {
-  width:25%;
+  width:35px;
 }
 
 .widthbutton
@@ -33,7 +33,7 @@
 
 .widthset
 {
-  width:5%;
+  width:35px;
 }
 
 
@@ -60,6 +60,10 @@
 
 .logo {
   width: 50%;
+  display: flex;
+  align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .nav {
@@ -102,7 +106,7 @@
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    color:black;
+    color:white;
   }
 
   .nav {
@@ -445,14 +449,15 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
-.logo {
+/* .logo {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.3rem;
   color: #000;
-}
+} */
 
 
 .navList {
