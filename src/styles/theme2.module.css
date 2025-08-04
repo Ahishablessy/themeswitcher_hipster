@@ -255,7 +255,7 @@
 
   .imageSection {
     order: 1;
-    /* max-width: 100%; */
+    max-width: 100%;
   }
 
   .textSection {
